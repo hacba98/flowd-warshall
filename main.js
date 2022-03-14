@@ -13,4 +13,4 @@ tester.test(solution.shortestPath());
 console.log('Running sample with input data reading from `data.json`:');
 solution.shortestPath();
 console.log('b -> d');
-solution.getPath('b', 'd');
+solution.getPath('a', 'c');

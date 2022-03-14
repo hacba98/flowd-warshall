@@ -1,5 +1,14 @@
 {
+  "scripts": {
+    "start": "node server.js",
+    "test": "node main.js",
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
+    "express": "^4.17.3",
     "floyd-warshall": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

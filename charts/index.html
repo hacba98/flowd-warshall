@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Include the ECharts file you just downloaded -->
+    <script src="./echarts.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  </head>
+  <body>
+    <!-- Prepare a DOM with a defined width and height for ECharts -->
+    <div  style="padding: 20px;">
+      <form id="findPath">
+        <label for="source">Source node ID:</label>
+        <input type="number" id="source" name="source"><br><br>
+        <label for="target">Destination node ID:</label>
+        <input type="number" id="target" name="target"><br><br>
+        <label for="target">Number of interation:</label>
+        <input type="number" id="it" name="it"><br><br>
+        <input type="submit" value="Find path">
+      </form>
+      <p id="cost"></p>
+    </div>
+    <div id="main" style="width: 2200px;height:1100px;"></div>
+  </body>
+  <script src="./my-floyd-warshall.js"></script>
+  <script src="./charts.js"></script>
+</html>
