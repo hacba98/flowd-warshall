@@ -1,0 +1,378 @@
+{
+  "vertices": [
+    {
+      "id": 0,
+      "name": "Truong Dai hoc Bach khoa - Dai hoc Quoc gia TP.HCM",
+      "x": -329,
+      "y": -21
+    },
+    {
+      "id": 1,
+      "name": "Dai Ly Chinh Hang Den GTR HCM",
+      "x": -248,
+      "y": -266
+    },
+    {
+      "id": 2,
+      "name": "Saigon Petro-Cua hang xang dau so 1",
+      "x": -12,
+      "y": -197
+    },
+    {
+      "id": 3,
+        "name": "Nga sau Cong Hoa",
+        "x": -34,
+        "y": -131
+    },
+    {
+      "id": 4,
+      "name": "Benh vien Nhi đong 1",
+      "x": -195,
+      "y": -88
+    },
+    {
+      "id": 5,
+      "name": "Sieu thi Big C Mien Dong",
+      "x": -266,
+      "y": 56
+    },
+    {
+      "id": 6,
+      "name": "Truong Dai hoc Y duoc Thanh pho Ho Chi Minh",
+      "x": -290,
+      "y": -290
+    },
+    {
+      "id": 7,
+      "name": "Tra Dau Co Phe",
+      "x": 34,
+      "y": -62
+    },
+    {
+      "id": 8,
+      "name": "Lotteria Nguyen Thi Minh Khai",
+      "x": 242,
+      "y": 166
+    },
+    {
+      "id": 9,
+      "name": "Dai duong Store",
+      "x": -18,
+      "y": 16
+    },
+    {
+      "id": 10,
+      "name": "Nga sau Dan chu",
+      "x": -35,
+      "y": 44
+    },
+    {
+      "id": 11,
+      "name": "Nga tu Hang Xanh",
+      "x": 380,
+      "y": 383
+    },
+    {
+      "id": 12,
+      "name": "Dinh Doc Lap",
+      "x": 155,
+      "y": 42
+    },
+    {
+      "id": 13,
+      "name": "GS25 Lê Thánh Tôn",
+      "x": 305,
+      "y": 108
+    },
+    {
+      "id": 14,
+      "name": "Masterise Grand Marina",
+      "x": 332,
+      "y": 136
+    },
+    {
+      "id": 15,
+      "name": "Thao Cam Vien",
+      "x": 295,
+      "y": 182
+    },
+    {
+      "id": 16,
+      "name": "Nga sau Phu Dong",
+      "x": 128,
+      "y": -47
+    },
+    {
+      "id": 17,
+      "name": "UBND phuong Cau Ong Lanh",
+      "x": 181,
+      "y": -130
+    },
+    {
+      "id": 18,
+      "name": "Michael Duc - Hair Design",
+      "x": 228,
+      "y": -190
+    },
+    {
+      "id": 19,
+      "name": "Quan Nhau - Doi Thit",
+      "x": 325,
+      "y": -132
+    },
+    {
+      "id": 20,
+      "name": "Ben Nha Rong",
+      "x": 316,
+      "y": -91
+    }
+  ],
+  "edges": [
+    {
+      "source": 6,
+      "target": 1,
+      "name": "Hong Bang",
+      "cost": 48
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "name": "Hong Bang",
+      "cost": 48
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "name": "An Duong Vuong",
+      "cost": 246
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "name": "An Duong Vuong",
+      "cost": 246
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "name": "Nguyen Van Cu",
+      "cost": 70
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "name": "Nguyen Van Cu",
+      "cost": 70
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "name": "Ly Thai To",
+      "cost": 167
+    },
+    {
+      "source": 4,
+      "target": 3,
+      "name": "Ly Thai To",
+      "cost": 167
+    },
+    {
+      "source": 5,
+      "target": 4,
+      "name": "Su Van Hanh",
+      "cost": 161
+    },
+    {
+      "source": 5,
+      "target": 0,
+      "name": "To Hien Thanh",
+      "cost": 100
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "name": "To Hien Thanh",
+      "cost": 100
+    },
+    {
+      "source": 6,
+      "target": 0,
+      "name": "Ly Thuong Kiet",
+      "cost": 272
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "name": "Ly Thuong Kiet",
+      "cost": 272
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "name": "Nguyen Thi Minh Khai",
+      "cost": 69
+    },
+    {
+      "source": 7,
+      "target": 3,
+      "name": "Nguyen Thi Minh Khai",
+      "cost": 69
+    },
+    {
+      "source": 7,
+      "target": 12,
+      "name": "Nguyen Thi Minh Khai",
+      "cost": 159
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "name": "Nguyen Thuong Hien",
+      "cost": 94
+    },
+    {
+      "source": 9,
+      "target": 7,
+      "name": "Nguyen Thuong Hien",
+      "cost": 94
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "name": "Nguyen Thuong Hien",
+      "cost": 33
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "name": "Dien Bien Phu",
+      "cost": 541
+    },
+    {
+      "source": 4,
+      "target": 10,
+      "name": "Ba Thang Hai",
+      "cost": 207
+    },
+    {
+      "source": 10,
+      "target": 4,
+      "name": "Ba Thang Hai",
+      "cost": 207
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "name": "Nguyen Thi Minh Khai",
+      "cost": 257
+    },
+    {
+      "source": 11,
+      "target": 8,
+      "name": "Nguyen Thi Minh Khai",
+      "cost": 257
+    },
+    {
+      "source": 12,
+      "target": 8,
+      "name": "Nguyen Thi Minh Khai",
+      "cost": 151
+    },
+    {
+      "source": 8,
+      "target": 13,
+      "name": "Ton Duc Thang",
+      "cost": 86
+    },
+    {
+      "source": 13,
+      "target": 8,
+      "name": "Ton Duc Thang",
+      "cost": 86
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "name": "Nguyen Huu Canh",
+      "cost": 39
+    },
+    {
+      "source": 14,
+      "target": 13,
+      "name": "Nguyen Huu Canh",
+      "cost": 39
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "name": "Nguyen Binh Khiem",
+      "cost": 59
+    },
+    {
+      "source": 15,
+      "target": 14,
+      "name": "Nguyen Binh Khiem",
+      "cost": 59
+    },
+    {
+      "source": 10,
+      "target": 16,
+      "name": "Cach mang thang Tam",
+      "cost": 187
+    },
+    {
+      "source": 16,
+      "target": 10,
+      "name": "Cach mang thang Tam",
+      "cost": 187
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "name": "Nguyen Thai Hoc",
+      "cost": 98
+    },
+    {
+      "source": 17,
+      "target": 16,
+      "name": "Nguyen Thai Hoc",
+      "cost": 98
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "name": "Cau Ong Lanh",
+      "cost": 76
+    },
+    {
+      "source": 18,
+      "target": 17,
+      "name": "Cau Ong Lanh",
+      "cost": 76
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "name": "Hoang Dieu",
+      "cost": 113
+    },
+    {
+      "source": 19,
+      "target": 18,
+      "name": "Hoang Dieu",
+      "cost": 113
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "name": "Nguyen Tat Thanh",
+      "cost": 42
+    },
+    {
+      "source": 20,
+      "target": 19,
+      "name": "Nguyen Tat Thanh",
+      "cost": 42
+    }
+  ]
+}

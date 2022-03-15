@@ -42,7 +42,7 @@ $('document').ready(() => {
 
 async function loadData() {
   return new Promise(resolve => {
-    $.getJSON('../maps.json', (d) => {
+    $.getJSON('../maps-1.json', (d) => {
       // generate adjacent matrix
       $('#it').val(d.vertices.length);
       generateAdjMatrix(d);
@@ -57,7 +57,7 @@ async function loadData() {
             formatter: () => e.name,
           },
           lineStyle: {
-            curveness: 0.2
+            curveness: 0.1
           }
         };
       });
@@ -66,6 +66,7 @@ async function loadData() {
       data.vertices = d.vertices.map(v => {
         return {
           ...v,
+          y: -v.y,
           label: {
             show: true,
             formmater: () => v.name,
