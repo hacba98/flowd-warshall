@@ -6,6 +6,7 @@ $('document').ready(() => {
   loadData().then(data => {
     // Display the chart using the configuration items and data just specified.
     drawChart(data);
+    $('#it').val(data.vertices.length);
   });
 
 
@@ -23,7 +24,7 @@ $('document').ready(() => {
     // find solution
     const solution = new MyFloydWarshall(data);
     solution.shortestPath();
-    $('#cost').text(`Shortest path cost is: ${solution.getShortestPathCost(src, target)}`); // display result
+    $('#cost').text(`Shortest path cost is: ${solution.getShortestPathCost(src, target, k)} (m)`); // display result
     loadData().then(data => {
       solution.getPath(src, target, k, drawPath);
       drawChart(data); // redraw chart
@@ -44,12 +45,12 @@ async function loadData() {
   return new Promise(resolve => {
     $.getJSON('../maps-1.json', (d) => {
       // generate adjacent matrix
-      $('#it').val(d.vertices.length);
       generateAdjMatrix(d);
 
       // format edges data for rendering
       data.edges = d.edges.map(e => {
         return {
+          ...e,
           source: e.source,
           target: e.target,
           label: {
@@ -103,7 +104,13 @@ function drawChart(data) {
       text: 'Demo Graph'
     },
     tooltip: {
-      formatter: (params) => `${params.data.id}`,
+      formatter: (params) => {
+        if (params.data.id) {
+          return `Node ID: ${params.data.id}<br>Name: ${params.data.name}`;
+        } else {
+          return `Path: ${params.data.name}<br> Cost: ${params.data.cost}`;
+        }
+      },
     },
     animationDurationUpdate: 500,
     animationEasingUpdate: 'quinticInOut',

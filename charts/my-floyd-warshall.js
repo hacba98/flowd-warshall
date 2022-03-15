@@ -48,10 +48,16 @@ function MyFloydWarshall(data) {
 
 
   // return the cost
-  this.getShortestPathCost = (src, dest) => {
+  this.getShortestPathCost = (src, dest, k) => {
+    const res = self.result[k][src][dest];
+
+    if (res === Number.MAX_SAFE_INTEGER) {
+      return 'Cannot find path';
+    }
+
     // print the shortest path value
-    console.log('Shortest path is: ', self.result[self.nodes][src][dest]);
-    return self.result[self.nodes][src][dest];
+    console.log('Shortest path is: ', res);
+    return (res / 0.095).toFixed(3); // convert to meter
   }
 
 
